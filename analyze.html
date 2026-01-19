@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Analizar ingredientes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header glass">
+  <img src="logo-icon.svg" class="logo-small" alt="Dermacheck">
+</header>
+
+<main class="container">
+  <h2>Analiza tus ingredientes</h2>
+
+  <form class="input-section" onsubmit="analizarIngredientes(); return false;">
+    <textarea 
+      id="ingredientesInput"
+      placeholder="Ejemplo: niacinamida, retinol, ácido hialurónico"
+      required
+    ></textarea>
+
+    <button type="submit">Analizar ingredientes</button>
+  </form>
+
+  <section id="resultados" class="results-section"></section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dermacheck</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header glass">
+  <div class="brand">
+    <img src="logo-icon.svg" class="logo-small" alt="Dermacheck">
+    <span class="brand-name">Dermacheck</span>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="toggleMenu()">Más ▾</button>
+      <div class="dropdown-content" id="dropdownMenu">
+        <a href="#" onclick="openModal()">¿Qué es INCI?</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="hero">
+  <img src="logo-icon.svg" class="hero-logo" alt="Dermacheck">
+  <span class="badge">Transparencia científica</span>
+  <h2>Descubre qué hay en tus productos</h2>
+  <p>Analiza ingredientes cosméticos y cuida tu piel con información clara y confiable.</p>
+  <a href="skin.html" class="btn-primary">Comenzar análisis</a>
+</main>
+
+<!-- MODAL -->
+<div class="modal" id="inciModal">
+  <div class="modal-content">
+    <h3>¿Qué es INCI?</h3>
+    <p>
+      INCI es el sistema internacional que estandariza los nombres de los
+      ingredientes cosméticos para brindar transparencia al consumidor.
+    </p>
+    <button class="btn-primary" onclick="closeModal()">Entendido</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
